@@ -143,8 +143,7 @@ class _LoginPageState extends State<LoginPage> {
                       });
                     },
                   ),
-                  Container(
-                    margin: EdgeInsets.only(),
+                  SizedBox(
                     width: getProportionateScreenWidth(107.0),
                     child: Text(
                       'Remember me',
@@ -228,7 +227,6 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     InputServices.email.dispose();
     InputServices.password.dispose();

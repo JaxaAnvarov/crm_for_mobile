@@ -5,11 +5,13 @@ class MyTextWidget extends StatelessWidget {
   late String text;
   late double size;
   late Color color;
+  late FontWeight width;
   MyTextWidget({
     Key? key,
     required this.color,
     required this.size,
     required this.text,
+    required this.width,
   }) : super(key: key);
 
   @override
@@ -20,6 +22,7 @@ class MyTextWidget extends StatelessWidget {
       style: TextStyle(
         color: color,
         fontSize: getProportionateScreenWidth(size),
+        fontWeight: width,
       ),
     );
   }

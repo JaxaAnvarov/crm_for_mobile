@@ -19,7 +19,7 @@ class MyBottomNavBar extends StatelessWidget {
       items: <BottomNavyBarItem>[
         BottomNavyBarItem(
           title: const Text('Home'),
-          icon: const Icon(Icons.home),
+          icon: const Icon(Icons.home_outlined),
           inactiveColor: Colors.white,
           activeColor: Colors.white,
         ),
@@ -31,7 +31,7 @@ class MyBottomNavBar extends StatelessWidget {
         ),
         BottomNavyBarItem(
           title: const Text('Message'),
-          icon: const Icon(Icons.messenger_sharp),
+          icon: const Icon(Icons.messenger_sharp ),
           inactiveColor: Colors.white,
           activeColor: Colors.white,
         ),

@@ -1,6 +1,7 @@
 import 'package:crm/screens/chat/chat_page.dart';
+// import 'package:crm/screens/chat/information_page.dart';
 import 'package:crm/screens/home/home_page.dart';
-import 'package:crm/screens/information/information_page.dart';
+import 'package:crm/screens/informations/information_page.dart';
 import 'package:flutter/material.dart';
 
 class BottomProvider extends ChangeNotifier {

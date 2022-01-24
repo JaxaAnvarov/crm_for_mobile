@@ -5,16 +5,19 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class InformationCubit extends Cubit<InformationState> {
   final InformationRepository informationRepository;
   InformationCubit(this.informationRepository)
-      : super(const InformationInitial());
+      : super(const InformationInitial()) {
+    getData();
+  }
 
-  Future<void> getCats() async {
+  Future<void> getData() async {
     try {
       emit(const InformationLoading());
-      await Future.delayed(const Duration(seconds: 3));
       final response = await informationRepository.getDataFromApi();
       emit(InformationCompledet(response));
     } catch (e) {
-      emit(InformationError(e.toString()));
+      emit(
+        InformationError(e.toString()),
+      );
     }
   }
 }

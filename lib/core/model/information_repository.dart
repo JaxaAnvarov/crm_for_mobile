@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:crm/core/model/information_model.dart';
 import 'package:http/http.dart' as http;
 
